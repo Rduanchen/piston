@@ -2,15 +2,12 @@ version: "3.2"
 
 services:
   api:
-    build:
-      context: ./api
-      dockerfile: Dockerfile
-    image: piston-custom
+    image: ntut/piston:latest
     container_name: piston_api
     restart: always
     privileged: true
     ports:
-      - "2000:2000"
+      - 2000:2000
     volumes:
       - ./data/piston/packages:/piston/packages
     tmpfs:

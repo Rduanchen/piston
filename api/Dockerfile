@@ -16,15 +16,15 @@ RUN dpkg-reconfigure -p critical dash
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
-        libxml2 gnupg tar coreutils util-linux libc6-dev \
-        binutils build-essential locales \
-        libpcre3-dev libevent-dev libgmp3-dev \
-        libncurses-dev libedit-dev libseccomp-dev \
-        rename procps python3 \
-        libreadline-dev libblas-dev liblapack-dev \
-        libarpack2-dev libfftw3-dev libglpk-dev \
-        libqhull-dev libqrupdate-dev libsuitesparse-dev \
-        libsundials-dev libpcre2-dev libcap-dev && \
+    libxml2 gnupg tar coreutils util-linux libc6-dev \
+    binutils build-essential locales \
+    libpcre3-dev libevent-dev libgmp3-dev \
+    libncurses-dev libedit-dev libseccomp-dev \
+    rename procps python3 \
+    libreadline-dev libblas-dev liblapack-dev \
+    libarpack2-dev libfftw3-dev libglpk-dev \
+    libqhull-dev libqrupdate-dev libsuitesparse-dev \
+    libsundials-dev libpcre2-dev libcap-dev && \
     rm -rf /var/lib/apt/lists/*
 
 RUN useradd -M piston

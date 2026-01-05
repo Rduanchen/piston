@@ -1,4 +1,4 @@
-version: '3.3'
+version: "3.3"
 
 services:
     api:
@@ -16,6 +16,6 @@ services:
     repo: # Local testing of packages
         build: repo
         container_name: piston_repo
-        command: ['--no-build'] # Don't build anything
+        command: ["--no-build"] # Don't build anything
         volumes:
             - .:/piston
