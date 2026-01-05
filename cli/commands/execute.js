@@ -62,7 +62,7 @@ exports.builder = {
         alias: ['rt', 'r'],
         number: true,
         desc: 'Milliseconds before killing run process',
-        default: 3000,
+        default: 300000,
     },
     compile_timeout: {
         alias: ['ct', 'c'],

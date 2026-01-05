@@ -15,3 +15,8 @@ services:
       - ./data/piston/packages:/piston/packages
     tmpfs:
       - /tmp:exec
+    environment:
+      # These are in Milliseconds
+      - PISTON_RUN_TIMEOUT=300000  # Set to 300 seconds (5 minutes)
+      - PISTON_RUN_CPU_TIME=300000  # Set to 300 seconds (5 minutes)
+      - PISTON_COMPILE_TIMEOUT=100000
